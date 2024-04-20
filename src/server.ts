@@ -8,7 +8,7 @@ app
 	})
 
 	.then(() => {
-		console.log('HTTP Server Running!!');
+		console.log(' 🚀 HTTP Server Running!!');
 	});
 
 // npm i typescript @types/node tsx tsup -D comando pra instalar dependencias padrao

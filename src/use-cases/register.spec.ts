@@ -49,7 +49,7 @@ describe('should not be able to register with same email twice ', () => {
 			email,
 			password: '123456',
 		});
-		expect(() =>
+		await expect(() =>
 			registerUseCase.execute({
 				name: 'John Doe',
 				email,

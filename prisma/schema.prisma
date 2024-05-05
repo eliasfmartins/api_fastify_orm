@@ -19,12 +19,12 @@ model User {
   email         String    @unique
   password_hash String
   created_at    DateTime  @default(now())
-  chechIns      checkIn[] //colunas que não seram salvas no db eu uso cameoncase
+  chechIns      CheckIn[] //colunas que não seram salvas no db eu uso cameoncase
 
   @@map("users")
 }
 
-model checkIn {
+model CheckIn {
   id           String    @id @default(uuid())
   created_at   DateTime  @default(now())
   validated_at DateTime?
@@ -43,7 +43,7 @@ model Gym {
   description String?
   phone       String?
   latitude    Decimal
-  checkIns     checkIn[]
+  checkIns     CheckIn[]
 
   @@map("gyms")
 }

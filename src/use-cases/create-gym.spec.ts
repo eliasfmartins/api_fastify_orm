@@ -1,6 +1,4 @@
 import { expect, describe, it, beforeEach } from 'vitest';
-import { RegisterUseCase } from './register';
-import { InMemoryUserRepository } from '@/repositories/in-memory/in-memory-users-repository';
 import { inMemoryGymsRepository } from '../repositories/in-memory/in-memory-gyms-repository';
 import { CreateGymUseCase } from './create-gym';
 
@@ -20,7 +18,6 @@ describe('Create Gym Use Case', () => {
             phone:null,
             latitude: -27.2092052,
             longitude: -49.6401091,
-
 		});
 
 		expect(gym.id).toEqual(expect.any(String));
